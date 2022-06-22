@@ -23,9 +23,9 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before:`
 ┌─「 *${global.namebot}* 」
-├ Hai, %name!
+├ Halo, %name!
 ├ Tersisa *%limit Limit*
-├ Role *%role*
+├ Rank *%role*
 ├ Level *%level (%exp / %maxexp)*
 ├ [%xp4levelup]
 ├ %totalexp XP secara Total
@@ -262,7 +262,7 @@ const ftroli = {
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `Hai Kak ${name}!`, 
+    message: `Hai bro ${name}!`, 
     orderTitle: `▮Menu ▸`,
     thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
@@ -293,7 +293,7 @@ let menuu = `┌────「 *${namebot}* 」───⬣
 ┌────「 *${name}* 」───⬣
 │⬡ Api : ${tag}
 │⬡ Limit : ${limit}
-│⬡ Role : ${role}
+│⬡ Rank : ${role}
 │⬡ Premium : ${global.prem ? 'Yes' : 'No'}
 │⬡ Date : ${week} ${date}
 │⬡ Time : ${wib}
@@ -309,11 +309,11 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             sections: [
               {
                 "rows": [{
-                  "title": ` 👨 OWNER BOT`,
+                  "title": ` 🤖 OWNER BOT`,
                   "description": "Nomor Pemilik Bot Chat P/Meminta Save Tidak Akan Di Respon",
                   "rowId": `.owner`
                 },{
-                  "title": "❗ INFO BOT",
+                  "title": "🗒️ INFO BOT",
                   "description": "Menampilkan Menu Info",
                   "rowId": `${_p}? info`
                 }],
@@ -336,15 +336,15 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Sticker",
                   "rowId": `${_p}? sticker`
                 }, {
-                  "title": "│📺│DOWNLOADER",
+                  "title": "│📥│DOWNLOADER",
                   "description": "Menampilkan Menu Downloader",
                   "rowId": `${_p}? downloader`
                 }, {
-                  "title": "│📈│EXP & LIMIT",
+                  "title": "│✨│EXP & LIMIT",
                   "description": "Menampilkan Menu Exp",
                   "rowId": `${_p}? xp`
                 }, {
-                  "title": "│🐣│FUN",
+                  "title": "│🗿│FUN",
                   "description": "Menampilkan Menu Fun",
                   "rowId": `${_p}? fun`
                 }, {
@@ -352,11 +352,11 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Game",
                   "rowId": `${_p}? game`
                 }, {
-                  "title": "│🧰│GITHUB",
+                  "title": "│⚙️│GITHUB",
                   "description": "Menampilkan Menu Github",
                   "rowId": `${_p}? github`
                 }, {
-                  "title": "│🏢│GROUP",
+                  "title": "│🪅│GROUP",
                   "description": "Menampilkan Menu Group",
                   "rowId": `${_p}? group`
                 }, {
@@ -396,7 +396,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Quotes",
                   "rowId": `${_p}? quotes`
                 }, {
-                  "title": "│🌱│RPG",
+                  "title": "│⚔️│RPG",
                   "description": "Menampilkan Menu Rpg",
                   "rowId": `${_p}? rpg`
                 }, {
@@ -416,11 +416,11 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Maker Text",
                   "rowId": `${_p}? text`
                 }, {
-                  "title": "│🧼│HENTAI",
+                  "title": "│🔞│HENTAI",
                   "description": "Menampilkan Menu Hentai",
                   "rowId": `${_p}? nsfw`
                 }, {
-                  "title": "│🌚│RANDOM",
+                  "title": "│♋│RANDOM",
                   "description": "Menampilkan Menu Random/Gabut",
                   "rowId": `${_p}? random`
                 }, {
